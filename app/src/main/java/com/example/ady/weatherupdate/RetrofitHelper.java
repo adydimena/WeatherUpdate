@@ -7,6 +7,7 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 /**
  * Created by Ady on 11/29/2017.
@@ -41,6 +42,7 @@ public class RetrofitHelper {
 
 
        @GET("api/7453d2c751a72e01/hourly/lang:EN/pws:0/q/02301.json")
-        Call<ForeCastbyHour> responseback();
+       Call<ForeCastbyHour> responseback();
+        //Call<ForeCastbyHour> responseback(@Path("zipcode")int zipcode);
     }
 }
